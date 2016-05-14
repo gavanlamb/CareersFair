@@ -1,0 +1,115 @@
+﻿form input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+}
+
+form .checkbox {
+    padding-left: 0;
+}
+
+form .checkboxlabel {
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    padding-left: 0;
+    min-height: 19px;
+    color: black;
+    font-weight: 300;
+}
+
+form input[type=checkbox] + .checkboxlabel:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    margin-top: -3px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+form input[type=checkbox]:checked + .checkboxlabel:before {
+    background: #ff6200;
+}
+
+form label {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    form label {
+        font-size: 20px;
+    }
+}
+
+form input[type=text],
+form input[type=password] {
+    border-radius: 0 !important;
+    background-color: white !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#finish span::before,
+#help span::before,
+#loginLink span::before {
+    margin-top: 0px;
+    display: block;
+    font-size: 60px !important;
+}
+
+span.login-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: #ff6200;
+    border-radius: 50%;
+    border: 1px solid #ff6200;
+    margin: auto;
+}
+
+    span.login-icon:before {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+.loginForm {
+    padding: 15px;
+    -webkit-box-shadow: 0 3px 7px #999;
+    box-shadow: 0 3px 7px #999;
+}
+
+div.form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+div.errors {
+    border-style: solid;
+    border-color: #ff6200;
+    border-width: 2px 1px;
+    background-color: rgba(255,98,0,1);
+}
+
+    div.errors .validation-summary-errors.text-danger ul {
+        list-style: none;
+        color: white;
+        padding: 0 10px;
+        margin-bottom: 0;
+    }
+.nopadding {
+    padding-left:0;
+    padding-right:0;
+}

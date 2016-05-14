@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "How to";
+    Layout = "~/Views/Shared/_LayoutMenu.cshtml";
+}
+@section stylesheet{
+    @Styles.Render("~/style/ionicons")
+    @Styles.Render("~/style/account")
+    @Styles.Render("~/style/main")
+}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>How to</h2>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h2 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Account
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <h3>Add New User</h3>
+                            <ol>
+                                <li>Login in with an exising user</li>
+                                <li>Click on <a href="/careersfair/Account/Register"><span class="ion-ios-personadd-outline"></span></a> in the menu </li>
+                                <li>Enter email and password for the new user account</li>
+                                <li>Click on <a href=""><span class="ion-ios-checkmark-empty"></span></a> </li>
+                                <li>A verification email will be sent to the new user, follow the steps</li>
+                                <li>You're ready to go</li>
+                            </ol>
+
+                            <h3>Reset Password</h3>
+                            <ol>
+                                <li>Logout if you are logged in</li>
+                                <li>Go to the login page</li>
+                                <li>Click on <a href="/careersfair/Account/ForgotPassword"><span class="ion-ios-help-empty"></span></a></li>
+                                <li>Enter your email address in the text box</li>
+                                <li>Click on <a href=""><span class="ion-ios-checkmark-empty"></span></a></li>
+                                <li>An email will be sent to the user</li>
+                                <li>Follow instructions</li>
+                            </ol>
+
+                            <h3>Logout</h3>
+                            <ol>
+                                <li>Click on the <a href="/careersfair/Account/LogOff"><span class="ion-log-out"></span></a> which is found on the menu</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Form
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <h3>View Form</h3>
+                            <ol>
+                                <li>To view the desired form click on the name</li>
+                                <li>You will see what the user sees, so if the form is disable you will see the lock form</li>
+                            </ol>
+                            <h3>Delete</h3>
+                            <ol>
+                                <li>Click on the trash can next to the form name</li>
+                                <li>
+                                    If the form has data you will be asked if you want to delete
+                                    <ol>
+                                        <li>Form and data</li>
+                                        <li>Or data only</li>
+                                    </ol>
+                                </li>
+                                <li>If the form does not have data you will be asked if you want to delete the form only</li>
+                                <li>Click on <a href=""><span class="ion-ios-checkmark-empty"></span></a> to proceed with the delete or </li>
+                                <li>Click on <button class="btn pull-left" data-dismiss="modal"><span class="ion-ios-close-empty"></span></button> to close the popup</li>
+                            </ol>
+                            <h3>Download Data</h3>
+                            <ol>
+                                <li>If the form has data, the download button will be enabled</li>
+                                <li>Click on <a class="btn" href=""><span class="ion-ios-cloud-download-outline"></span></a> and the download will start when the zip file is ready</li>
+                                <li>Note: please wait until the download has started before doing anything els</li>
+                            </ol>
+                            <h3>View Data</h3>
+                            <ol>
+                                <li>If the form has data, the view data button will be enabled</li>
+                                <li>Click on <a class="btn" href="" target="_blank"> <span class="ion-ios-list-outline"></span></a> and the data will show in a new window</li>
+                            </ol>
+                            <h3>Download QR code</h3>
+                            <ol>
+                                <li>Click on <a class="btn" href=""><span class="ion-ios-barcode-outline"></span></a> to download a zipfile of 8 differently sized QR codes</li>
+                            </ol>
+                            <h3>Lock/Unlock</h3>
+                            <ol>
+                                <li>If the form is unlocked the locked lock will show, if the form is locked the unlocked lock will show</li>
+                                <li>Click on the corresponding button</li>
+                                <li>Click on <a href=""><span class="ion-ios-checkmark-empty"></span></a> to proceed</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Form Builder
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <h3>Create new form</h3>
+                            <ol>
+                                <li>Enter a Valid Title for the form and press next.</li>
+                                <li>Select each tab for different form elements.</li>
+                                <li>Click on an element that you would like to add to the form.</li>
+                                <li>Edit the values of the fields by clicking on each element.</li>
+                                <li>To re-organize the form you can drag and drop the elements.</li>
+                                <li>Click Next after you have finished</li>
+                                <li>In the actions menu if you would like the attendees of the fair to use their LinkedIn account to fill in the form select the LinkedIn icon on the left.</li>
+                                <li>To make sure the persons details are in the right fields make sure the form field matches the</li>
+                                <li>LinkedIn field. For Example : Form field : first name should be  LinkedIn field : First name ).</li>
+                                <li>After you are done click Finish (Arrow in the bottom right)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

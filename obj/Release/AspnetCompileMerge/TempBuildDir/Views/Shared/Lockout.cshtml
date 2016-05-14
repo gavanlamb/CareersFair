@@ -1,0 +1,27 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Locked Out";
+}
+@section stylesheet{
+    @Styles.Render("~/style/ionicons")
+    @Styles.Render("~/style/account")
+    @Styles.Render("~/style/main")
+}
+
+<h1 class="text-danger">Locked out.</h1>
+<h2 class="text-danger">This account has been locked out, please try again later.</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+            <h1>@ViewBag.Title</h1>
+            <div class="errors">
+            </div>
+            <div class="loginForm">
+                <h2 class="text-danger">Locked out.</h2>
+                <h3 class="text-danger">This account has been locked out, please try again later.</h3>
+            </div>
+        </div>
+    </div>
+</div>

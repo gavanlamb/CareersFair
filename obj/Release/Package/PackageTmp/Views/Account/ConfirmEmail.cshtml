@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Confirm Email";
+}
+@section stylesheet{
+    @Styles.Render("~/style/ionicons")
+    @Styles.Render("~/style/account")
+    @Styles.Render("~/style/main")
+}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+            <h1>@ViewBag.Title</h1>
+            <div class="errors">
+            </div>
+            <div class="loginForm">
+                <h2 class="text-center">Thank you!</h2>
+                <h3 class="text-center">Would you like to login?</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding">
+                        <a href="@Url.Action("Login", "Account", routeValues: null)" class="btn pull-right" id="loginLink">
+                            <span class="ion-ios-checkmark-empty"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
